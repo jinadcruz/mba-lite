@@ -1,0 +1,33 @@
+# MBA Lite — Code Owners
+# These owners will be automatically requested for review on PRs.
+
+# Default — all files
+*                           @your-org/mba-lite-core
+
+# Documentation
+docs/                       @your-org/mba-lite-product
+*.md                        @your-org/mba-lite-product
+
+# AI Tutor
+src/lib/ai/                 @your-org/mba-lite-ml
+src/app/api/tutor/          @your-org/mba-lite-ml
+
+# Content & Curriculum
+content/                    @your-org/mba-lite-content
+src/lib/srs/                @your-org/mba-lite-core
+
+# UI Components
+src/components/             @your-org/mba-lite-frontend
+
+# Database & Auth
+prisma/                     @your-org/mba-lite-core
+src/lib/auth/               @your-org/mba-lite-core
+
+# Payments & Subscriptions
+src/lib/stripe/             @your-org/mba-lite-core @your-org/mba-lite-finance
+src/app/api/webhooks/       @your-org/mba-lite-core @your-org/mba-lite-finance
+
+# Infrastructure
+.github/                    @your-org/mba-lite-devops
+next.config.ts              @your-org/mba-lite-devops
+docker-compose.yml          @your-org/mba-lite-devops
